@@ -2,25 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cypher</title>
+    <title>Cifra de César</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <label>Digite sua mensagem aqui:</label>
-    <input type="text" id='text1'/> </p>
+    
+    <div id='pagina'>
 
-    <label>Qual a chave de deslocamento?</label>
-    <input type='text' id='desloc'/> </p>
+      <h2>Cifra de Cesar</h2>
 
-    <label>Sua mensagem cifrada é: <span id='textCifra'></span></label> </p>
-    <label>Sua mensagem decifrada é: <span id='textDescifra'></span></label> </p>
+      <div class="textBox"> 
+        <p class='textoInicial'>Digite sua mensagem:</p>
+        <input type="text" id='text1'/> 
+      </div>
 
-    <button onclick= "buttonEncodcde()" id='buttonEncode'>Criptografa</button>
-    <button onclick= "buttonDecode()" id='buttonDecode'>Descriptografa</button>
+      <div> 
+        <p class='textoInicial'> Qual é a chave de deslocamento? </p>
+        <input type='number' id='desloc'/> 
+      </div>
 
+      <div> 
+        <button class='btn' onclick= "buttonEncode()">Cifra</button> 
+        <button class='btn' onclick= "buttonDecode()">Decifra</button> 
+      </div>
+
+      <div class='msgCifrada'> 
+        <p id="textCifra"></p>  
+        <p id='textDescifra'></p>
+      </div>
+    
+  
+    </div> 
+    
     <script src="cipher.js"></script>
     <script src="tests.js"></script>
-    
-    
+
   </body>
 </html>

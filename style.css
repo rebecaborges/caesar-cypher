@@ -1,0 +1,84 @@
+body{ 
+    background-image: url(imagens/balloons.jpg);
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    text-align: center;
+
+}
+
+#pagina{
+    margin:100px;
+    height:100%;
+    padding: 30px;
+    font-size: 35px;
+    background-color: #ffffff;
+    text-align: center; color:rgb(141, 12, 12);
+
+}
+
+.btn{
+    margin: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(141, 12, 12);
+    padding: 8px 55px;
+    background: -moz-linear-gradient(
+        top,
+        #ffffff 0%,
+        #db6d6d);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#ffffff),
+        to(#db6d6d));
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    border: 1px solid #000000;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 5px rgba(255,084,084,0.6);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 5px rgba(255,084,084,0.6);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 5px rgba(255,084,084,0.6);
+    text-shadow:
+        0px -1px 3px rgba(255,255,255,0.8),
+        0px 1px 0px rgba(255,255,255,0.3);
+}
+
+.msgCifrada{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+.textoInicial{
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px; 
+    color: #B22222;
+}
+
+#text1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;  
+    border-color: #db6d6d;
+}
+
+
+
+#desloc{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-color: #db6d6d;
+}
+
+#textCifra, #textDescifra{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px; 
+    color: #B22222;
+}
