@@ -1,16 +1,26 @@
 function buttonEncode(){
-    let str = document.getElementById('text1').value
+
+    let str = document.getElementById('text1').value // coloquei .value pois quando se está pegando algo no hmtl precisa informar que é um valor
     let offPosition = parseInt(document.getElementById('desloc').value)
+    let offPositionAlert = document.getElementById('desloc').value
     let outEncode = encode(str,offPosition)
-    document.getElementById('textCifra').innerHTML= 'Sua mensagem cifrada é: '+outEncode;
+    
+
+    if (str ==='' || offPositionAlert===''){ //criei o if para obrigar usuario a digitar algo
+    alert('Digite algo válido!');
+    }else{document.getElementById('textCifra').innerHTML= 'Sua mensagem cifrada é: '+outEncode}
     
 }
 
 function buttonDecode(){
     let str = document.getElementById('text1').value
     let offPosition = parseInt(document.getElementById('desloc').value)
+    let offPositionAlert = document.getElementById('desloc').value
     let outDecode = decode(str,offPosition)
-    document.getElementById('textDescifra').innerHTML= 'Sua mensagem decifrada é: '+outDecode
+
+    if (str ==='' || offPositionAlert===''){
+        alert('Digite algo válido!');
+        }else{document.getElementById('textCifra').innerHTML= 'Sua mensagem decifrada é: '+outDecode}
 }
 
 function encode (str,offPosition){
@@ -40,7 +50,7 @@ function decode(str,offPosition){
   
     for(i=0; i<str.length; i++){
         if(str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90){
-        ascii = (str.charCodeAt(i) -65- (offPosition)%26)+65;
+        ascii = (str.charCodeAt(i) -65- (offPosition)%26)+65; // alterei a formula com o simbolo "-" para a posição de deslocamento, para decifrar
         outText += String.fromCharCode(ascii)
   
         }else if (str.charCodeAt(i) >= 97 && str.charCodeAt(i) <= 122){
