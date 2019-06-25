@@ -1,0 +1,65 @@
+body{ 
+  background-image: linear-gradient(to bottom, #2D4459,#42708C);;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+}
+
+.container{
+  margin-top: 50px;
+  font-size: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #F2F2F2;
+}
+
+.section-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #809BA6;
+  margin-top: 80px;
+  padding: 7%;
+  border-radius: 65px;
+}
+
+.section-offset{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.text{
+  width: 55vw;
+  height: 20vw;
+  font-size: 27px; 
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.number-offset{
+  margin-top: 5px;
+  padding: 5px;
+  width: 15%;
+  height: 24px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+.btn{
+  margin: 4px;
+  font-size: 20px;;
+  padding: 7px 30px;
+  border-radius: 15px;
+  border: none;
+  color: #F2F2F2;
+  background-color: #2D4459;
+}
+
+.return-msg{
+  margin: 0;
+  font-size: 35px;
+  color: #F2F2F2;
+}
