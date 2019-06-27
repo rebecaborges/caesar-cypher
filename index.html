@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Cifra de César</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./src/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -12,9 +12,9 @@
       <section class="section-main">
         <textarea type="text" id="text" class="text" placeholder="Digite sua mensagem:"></textarea>
         <section class="section-offset">
-          <input class="number-offset" type="number" value="0" id="inputValue"/>
-          <button class="btn" id="btn-encode">Cifra</button> 
-          <button class="btn" id="btn-decode">Decifra</button>
+          <input class="number-offset" type="number" value="0" id="offset"/>
+          <button class="btn" id="btn-encode" value="encode">Cifra</button> 
+          <button class="btn" id="btn-decode" value="decode">Decifra</button>
         </section>
       </section>
       <footer class="return-msg"> 
@@ -22,8 +22,8 @@
       </footer>
     </main> 
 
-    <script src="./cypher.js"></script>
-    <script src="./tests.js"></script>
+    <script src="./src/cypher.js"></script>
+    <script src="./src/tests.js"></script>
 
   </body>
 </html>
