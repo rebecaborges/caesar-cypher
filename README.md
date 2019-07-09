@@ -1,5 +1,7 @@
 # Cifra de César
 
+[![Build Status](https://img.shields.io/badge/acess-web-blue.svg)](https://rebecaborges.github.io/caesar-cypher/)
+
 ## Introdução
 
 O projeto foi desenvolvido para um usuário que deseja esconder as mensagens compartilhadas com amigos e familiares, para realizar um aniversário surpresa de sua mãe.
